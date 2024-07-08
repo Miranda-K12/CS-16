@@ -43,6 +43,15 @@ for(num of array1) {
 }
 }
 console.log(reverse([1, 2, 3, 4, 5]));
+
+function reverseArray(arr) {
+  let reverseArr = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+    reverseArr.push(arr[i]);
+  }
+  return reverseArr; 
+}
+console.log(reverseArray([1, 2, 3, 4, 5]));
 /*6 ფუნქციის საშუალებით გამოთვალეთ იუსერის ასაკი ( არგუმენტად გადაეცით ნებისმიერი რიცხვი) და დაამატეთ შემდეგი პირობა, თუ გადაცემული ასაკი მეტია 18- ზე დააბრუნეთ - სრულლოვანი, თუ ნაკელებია  დააბრუნეთ არასწულწლოვანი. 
 ეს ამოცანა დაწერეთ arrow function-ით და if ის პირობა ჩაწერეთ ახალი სინტაქსით;
 */
